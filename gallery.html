@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="dude.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="dude.css">
+        <style>body{background-color:#152836}h2{color:#fff;margin-bottom:40px;text-align:center;font-weight:100;}</style>
+<style>
+		
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+	.fifth {
+  border-color: #8e44ad;
+  border-radius: 0;
+  color: #8e44ad;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.fifth:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #8e44ad;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.fifth:hover {
+  color: #fff;
+}
+.fifth:hover:after {
+  width: 110%;
+}
+
+		</style>
+    </head>
+    <body class="home">
+        <div class="container" style="margin-top:40px;">
+            <h2>The gallery </h2>
+            <div class="demo-gallery">
+                <ul id="lightgallery" class="list-unstyled row">
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g1.webp" data-src="images/gallery/g1.webp" data-sub-html="<h4>Coal diagram</h4><p>The image shows the coal under the earth . </p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g1.webp">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g2.jpg" data-src="images/gallery/g2.jpg" data-sub-html="<h4>Process of filling </h4><p>It is the process that filling the row coal ore .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g2.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g3.webp" data-src="images/gallery/g3.webp" data-sub-html="<h4>It is a circut diagram </h4><p>The diagram shows the circt diagram of our proposed system .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g3.webp">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g4.jpg" data-src="images/gallery/g4.jpg" data-sub-html="<h4>Carring process</h4><p>The image shows the carring the row coal to the industry .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g4.jpg">
+                        </a>
+                    </li>
+    				<li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g5.jpg" data-src="images/gallery/g5.jpg" data-sub-html="<h4>Mining process</h4><p>The image shows the mining process inside the coal mine .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g5.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g6.jpg" data-src="images/gallery/g6.jpg" data-sub-html="<h4>Communication system</h4><p>The picture shows the currently running communication system .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g6.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g7.jpg" data-src="images/gallery/g7.jpg" data-sub-html="<h4>Carring the row ore </h4><p>The image shows the row ore to be carring in the out side of a mine . </p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g7.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g8.gif" data-src="images/gallery/g8.gif" data-sub-html="<h4>Inner part of an coal mine </h4><p>It is an horizontal  type coal mine  .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g8.gif">
+                        </a>
+                    </li>
+    				<li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g9.jpg" data-src="images/gallery/g9.jpg" data-sub-html="<h4>Drawing </h4><p>It is an drawing and it shows the planning of the coal mine industry .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g9.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g10.jpg" data-src="images/gallery/g10.jpg" data-sub-html="<h4>Drawing</h4><p>It is an drawing ,  it shows the process of coal mine industry .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g10.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g11.jpg" data-src="images/gallery/g11.jpg" data-sub-html="<h4>Row coal </h4><p>Carring the row ore to be cutting process .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g11.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g12.jpg" data-src="images/gallery/g12.jpg" data-sub-html="<h4>Slanding type coal mine</h4><p>The slanding type of an coal mine .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g12.jpg">
+                        </a>
+                    </li>
+    				<li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g13.jpg" data-src="images/gallery/g13.jpg" data-sub-html="<h4>Ore</h4><p>Carring the row ore for processing .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g13.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g14.webp" data-src="images/gallery/g14.webp" data-sub-html="<h4>Cutting process</h4><p>The row coal ore is to be carried to the industry for clearing the impurites..</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g14.webp">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g15.jpg" data-src="images/gallery/g15.jpg" data-sub-html="<h4>Wide angle photograph</h4><p>Wide angle photograph of an  coal mine .</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g15.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g16.jpg" data-src="images/gallery/g16.jpg" data-sub-html="<h4>Picture of an old industry style</h4><p>This is the first genration coal mining setup..</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g16.jpg">
+                        </a>
+                    </li>
+    				<li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g17.jpg" data-src="images/gallery/g17.jpg" data-sub-html="<h4>Coal mine industry</h4><p>This is our old coal mine industry to clear the impurites of an row coal ore..</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g17.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g18.jpg" data-src="images/gallery/g18.jpg" data-sub-html="<h4>Inner par of an coal mine</h4><p>Inner part of a coal mine ..</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g18.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g19.jpg" data-src="images/gallery/g19.jpg" data-sub-html="<h4>Our old mine</h4><p>Our old coal mine ....</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g19.jpg"> 
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="images/gallery/g20.jpg" data-src="images/gallery/g20.jpg" data-sub-html="<h4>Sales coal</h4><p>The pure coal for sales..</p>">
+                        <a href="">
+                            <img class="img-responsive" src="images/gallery/g20.jpg">
+                        </a>
+                    </li>
+				</ul>
+            </div>
+        </div>
+		<form>
+		<button class="btn fifth" formaction="abc.html" style="align-content: center;">Previous tab </button>
+			</form>
+        <script>
+            $(document).ready(function(){
+                $('#lightgallery').lightGallery(); 
+            });
+        </script>
+    </body>    
+</html>
