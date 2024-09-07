@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #33b5e5;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color:  #9933cc;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color:  #9933cc;
+}
+
+.aside {
+  background-color:  #9933cc;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color:  #9933cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+	
+		
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #33b5e5;
+  border-radius: 0.6em;
+  color: #33b5e5;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+	.fifth {
+  border-color: #33b5e5;
+  border-radius: 0;
+  color: #33b5e5;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.fifth:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #33b5e5;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.fifth:hover {
+  color: #fff;
+}
+.fifth:hover:after {
+  width: 110%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Coal mines in India</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>Coal in India</li>
+      <li>Pre-independence</li>
+      <li>Post-independence</li>
+		<li>Nationalisation of coal mines</li>
+		<li>Denationalisation of coal mines</li>
+		<li> <img src="images/Coal_production_of_India.svg" width="100%" height="110%"></li>
+		<form>
+		<button class="btn fifth" formaction="abc.html" >Previous tab </button>	
+			</form>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Coal in India</h1>
+    <p>Coal in India has been mined since 1774, and India is the second largest producer and consumer of coal after China, mining 777.31 million metric tons (856.84 million short tons) in FY 2022.  Around 30% of coal is imported.</p>
+	  <h1>Pre-independence</h1>
+	  <p>Commercial exploitation of coal in India began in 1774 with John Sumner and Suetonius Grant Heatly of the East India Company in the Raniganj Coalfield along the Western bank of Damodar River. </p>
+	  <h1>Post-independence</h1>
+	  <p>Following independence, the Government of India introduced several 5-year development plans. Annual production rose to 33 million metric tons (36 million short tons) at the beginning of the First Five Year Plan. </p>
+	  <h1>Nationalisation of coal mines</h1>
+	  <p>Right from its genesis, the commercial coal mining in modern times in India has been dictated by the needs of the domestic consumption. India has abundant domestic reserves of coal.</p>
+	
+		
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Denationalisation of coal mines</h2>
+      <p>
+Parliament enacted the Coal Mines (Special Provisions) Act, 2015 in March 2015 containing provisions enabling the government to allocate coal mines through auctions. The law also permitted private players to mine coal for use in their own cement, steel, power or aluminium plants. </p>
+      <h2>How?</h2>
+      <p>On 20 February 2018, the Cabinet Committee on Economic Affairs (CCEA) permitted private firms to enter the commercial coal mining industry in India.</p>
+		<h2>When  ?</h2>
+		<p>Under the new policy, mines will be auctioned to the firm offering the highest per tonne price. The move broke the monopoly over commercial mining that state-owned Coal India has enjoyed since nationalisation in 1973.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>The Indira Gandhi administration nationalized coal mining in phases - coking coal mines in 1971/72 and non-coking coal mines in 1973.With the enactment of the Coal Mines (Nationalization) Act, 1973, all coal mines in India were nationalized in May 1973.  </p>
+</div>
+
+</body>
+</html>
+
+

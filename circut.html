@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+	
+		
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+	.fifth {
+  border-color: #8e44ad;
+  border-radius: 0;
+  color: #8e44ad;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.fifth:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #8e44ad;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.fifth:hover {
+  color: #fff;
+}
+.fifth:hover:after {
+  width: 110%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Circut diagram</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>Circut </li>
+      <li>Components of Circuit Diagram</li>
+      <li>purpose of a circuit diagram?</li>
+		<li>simple circuit diagram?</li>
+		<li> <img src="images/circut.webp" width="100%" height="110%"></li>
+		<form>
+		<button class="btn fifth" formaction="abc.html" >Previous tab </button>	
+			</form>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>The Circut diagram </h1>
+    <p>The circuit diagram is a simplified representation of the components of an electrical circuit using either the images of the distinct parts or standard symbols. It shows the relative positions of all the elements and their connections to one another. </p>
+	  <h1> The circut </h1>
+	  <p>A circuit diagram is a graphical representation of an electrical circuit. A circuit diagram, also called an electrical diagram, elementary diagram, or electronic schematic, is a simplified graphical representation of an electrical circuit. Circuit diagrams are used for the design, construction and maintenance of electrical and electronic equipment.</p>
+	  <h1> Components of Circuit Diagram</h1>
+	  <p>An electric cell: It provides the source of current. In its symbol, the larger terminal is positive, whereas the smaller one is the negative terminal.It is used to restrict the amount of current flow in the circuit.</p>
+	  <h1>Purpose of a circuit diagram?</h1>
+	  <p>Circuit diagrams are used for the design, construction and maintenance .</p>
+	
+		
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>A circuit is a closed loop that electrons can travel in. A source of electricity, such as a battery, provides electrical energy in the circuit.</p>
+      <h2>Use ?</h2>
+      <p>Circuit diagrams are used for the design (circuit design), construction (such as PCB layout), and maintenance of electrical and electronic equipment.</p>
+      <h2>How?</h2>
+      <p>SmartDraw comes with thousands of detailed electrical symbols you can drag and drop to your drawings and schematics</p>
+		<h2>simple circuit diagram?</h2>
+		<p>A simple circuit is a circuit that contains the three basic components needed for an electric circuit to function. The three basic components are a source of voltage, a conductive path, and a resistor.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Used for the design (circuit design), construction (such as PCB layout), and maintenance of electrical and electronic equipment.</p>
+</div>
+
+</body>
+</html>
+
+
